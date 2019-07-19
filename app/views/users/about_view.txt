@@ -1,0 +1,7 @@
+sessions/new.html.erb	ログイン画面
+registrations/new.html.erb	ユーザ登録画面
+registrations/edit.html.erb	プロフィール情報変更画面
+passwords/new.html.erb	メール送信画面(パスワード変更用)
+passwords/edit.html.erb	パスワード変更画面
+confirmations/new.html.erb	メールによる認証を行う画面
+unlocks/new.html.erb	アカウントのアンロック画面
