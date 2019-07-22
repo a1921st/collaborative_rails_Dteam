@@ -1,9 +1,3 @@
-<%= render 'form', book: @book %>
-
-<%= link_to 'Show', @book %> |
-<%= link_to 'Back', books_path %>
-
-
 <!doctype html>
 <html lang="jp">
 
@@ -38,6 +32,10 @@
 </nav>
 
 
+<div class="back" align="right">
+  <button type="button">戻る</button>
+</div>
+
 <div class="display">
 <table>
   <th>
@@ -55,11 +53,17 @@
  </th>
 </table>
 
+<%= form_for(@book) do |f| %>
+  <div class="field"> 
+    <%= f.file_field :image %>
+  </div>
+<% end %>
+
+<div class="Save" align="right">
+<button type="submit" name="Save"%>登録</button>
+
+
 </div>
-
-
-<%= link_to 'Back', books_path %>
-
 
 
 <!-- Optional JavaScript -->
