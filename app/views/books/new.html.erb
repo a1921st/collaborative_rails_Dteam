@@ -32,29 +32,36 @@
 </nav>
 
 
-<div class="display">
-<table>
-  <th>
-   <td valign="top">
-<%= image_tag 'img1.png', size: '400x560' %>
-</td>
- </th>
- <th>
-  <td align="left" valign="top">
-<p>タイトル名：<br><input type="text" name="Title"></p>
-<p>著者：<br><input type="text" name="Author"></p>
-<p>コメント：<br><textarea name="Comment" row="8" cols="50"></textarea>
-
-  </td>
- </th>
-</table>
-
+<div class="back" align="right">
+  <button type="button">戻る</button>
 </div>
 
+<div class="display">
+  <table>
+    <th>
+      <td valign="top">
+        <%= image_tag 'img1.png', size: '400x560' %>
+      </td>
+    </th>
+    <th>
+      <td align="left" valign="top">
+        <p>タイトル名：<br><input type="text" name="Title"></p>
+        <p>著者：<br><input type="text" name="Author"></p>
+        <p>コメント：<br><textarea name="Comment" row="8" cols="50"></textarea>
+      </td>
+    </th>
+  </table>
 
-<%= link_to 'Back', books_path %>
+<%= form_for(@book) do |f| %>
+  <div class="field"> 
+    <%= f.file_field :image %>
+  </div>
+<% end %>
 
+<div class="Save" align="right">
+<button type="submit" name="Save"%>登録</button>
 
+</div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

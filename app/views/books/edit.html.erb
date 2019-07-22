@@ -1,6 +1,78 @@
-<h1>Editing Book</h1>
-
 <%= render 'form', book: @book %>
 
 <%= link_to 'Show', @book %> |
 <%= link_to 'Back', books_path %>
+
+
+<!doctype html>
+<html lang="jp">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="books.scss">
+    <title>Book Finder</title>
+</head>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary mt-3 mb-3">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4"
+        aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">読書ログ共有ツール　～ Book Finder ～</a>
+    <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">ログアウト</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">〇〇さんでログイン中</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="display">
+<table>
+  <th>
+   <td valign="top">
+<%= image_tag 'img1.png', size: '400x560' %>
+</td>
+ </th>
+ <th>
+  <td align="left" valign="top">
+<p>タイトル名：<br><input type="text" name="Title"></p>
+<p>著者：<br><input type="text" name="Author"></p>
+<p>コメント：<br><textarea name="Comment" row="8" cols="50"></textarea>
+
+  </td>
+ </th>
+</table>
+
+</div>
+
+
+<%= link_to 'Back', books_path %>
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
