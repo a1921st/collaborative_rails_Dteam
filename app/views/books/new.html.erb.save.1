@@ -33,22 +33,24 @@
 
 
 <div class="display">
+<div class="inner">
 <table>
   <th>
-   <td valign="top">
-<%= image_tag 'img1.png', size: '400x560' %>
+   <td>
+<%= image_tag("img1.png") %>
 </td>
  </th>
  <th>
-  <td align="left" valign="top">
+  <td align="left">
 <p>タイトル名：<br><input type="text" name="Title"></p>
 <p>著者：<br><input type="text" name="Author"></p>
-<p>コメント：<br><textarea name="Comment" row="8" cols="50"></textarea>
+
+<p>コメント：<br><input type="textarea" name="Comment" row="4" cols="50">
 
   </td>
  </th>
 </table>
-
+</div>
 </div>
 
 
