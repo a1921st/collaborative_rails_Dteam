@@ -33,7 +33,7 @@
 
 
 <div class="back" align="right">
-  <button type="button">戻る</button>
+  <%= button_to "戻る", {controller: 'books', action: 'show'}, {method: :get} %>
 </div>
 
 <div class="display">
@@ -61,7 +61,7 @@
 
 <div class="Save" align="right">
 <button type="submit" name="Save"%>登録</button>
-
+# DB登録後、画面遷移する必要あり
 
 </div>
 
