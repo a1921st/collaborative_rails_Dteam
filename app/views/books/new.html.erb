@@ -32,8 +32,8 @@
 </nav>
 
 
-<div class="back" align="right">
-  <%= button_to "戻る", {controller: 'books', action: 'show'}, {method: :get} %>
+<div align="right">
+  <%= button_to "戻る", {controller: 'books', action: 'show'}, {method: :get, class: "button"} %>
 </div>
 
 <div class="display">
@@ -58,8 +58,9 @@
   </div>
 <% end %>
 
-<div class="Save" align="right">
-<button type="submit" name="Save"%>登録</button>
+<div align="right">
+  <button type="submit" name="Save"%>登録</button>
+  <%= button_to "登録", {controller: 'books', action: 'show'}, {method: :get, class: "button"} %>
 # DB登録後、一覧画面に遷移する必要あり
 </div>
 

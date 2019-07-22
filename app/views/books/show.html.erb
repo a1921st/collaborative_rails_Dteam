@@ -31,9 +31,9 @@
     </div>
 </nav>
 
-
-<div class="back" align="right">
-  <button type="button">編集</button><button type="button">戻る</button>
+<div align="right">
+  <%= button_to "戻る", {controller: 'books', action: 'edit'}, {method: :get, class: "button"} %>
+  <%= button_to "編集", {controller: 'books', action: 'edit'}, {method: :get, class: "button"} %>
 </div>
 
 <div class="display">
