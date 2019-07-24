@@ -6,5 +6,6 @@ Rails.application.routes.draw do
       registrations: 'users/registrations'
   }
   resources :users
-  root 'users/sessions#new'
+  #root 'users/sessions#new'
+  root 'welcome#index'
 end
