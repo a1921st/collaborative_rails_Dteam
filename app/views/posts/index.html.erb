@@ -22,7 +22,7 @@
     <div class="collapse navbar-collapse justify-content-end">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#">ログアウト</a>
+                <a class="nav-link" href="http://localhost:3000/users/sign_up">ログアウト</a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="#">〇〇さんでログイン中</a>
@@ -40,7 +40,7 @@
     <form action="">
         <div class="input-group">
             <input type="text" placeholder="書籍タイトル">
-            <button class="btn btn-primary" type=“button” onclick="location.href='https://www.google.com'">検索</button>
+            <button class="btn btn-primary" type=“button” onclick="">検索</button>
         </div>
         </div>
     </form>
@@ -58,17 +58,6 @@
     <tbody>
         <tr>
             <td>1</td>
-            <td><img src="img1.png" width="70%"></img></td>
-            <td style="text-align:left;">
-                <h5>児矢野さん　のおすすめ！</h5>
-                <p>タイトル：アジャイルサムライ<br>著者：Jonathan Rasmusson</p>
-                <p>コメント：<br>とてもわかりやすくておすすめ</p>
-            </td>
-            <td><button class="btn btn-primary"
-                    type=“button”onclick="location.href='https://www.google.com'">詳細</button></td>
-        </tr>
-        <tr>
-            <td>2</td>
             <td><img src="img2.png" width="70%"></img></td>
             <td style="text-align:left;">
                 <h5>竹尾さん　のおすすめ！</h5>
@@ -76,10 +65,10 @@
                 <p>コメント：<br>読めば読むほど目からうろこが落ちます！</p>
             </td>
             <td><button class="btn btn-primary"
-                    type=“button”onclick="location.href='https://www.google.com'">詳細</button></td>
+                   type="button"onclick="location.href='http://localhost:3000/books/2'">詳細</button></td>
         </tr>
         <tr>
-            <td>3</td>
+            <td>2</td>
             <td><img src="img3.png" width="70%"></img></td>
             <td style="text-align:left;">
                 <h5>増田さん　のおすすめ！</h5>
@@ -87,10 +76,10 @@
                 <p>コメント：<br>スクラムの基礎から応用まで学べます!</p>
             </td>
             <td><button class="btn btn-primary"
-                    type=“button”onclick="location.href='https://www.google.com'">詳細</button></td>
+                    type=“button”onclick="location.href='http://localhost:3000/books/3'">詳細</button></td>
         </tr>
         <tr>
-            <td>4</td>
+            <td>3</td>
             <td><img src="no_image.png" alt="No data" width="70%"></img></td>
             <td style="text-align:left;">
                 <h5>（登録者さん）　のおすすめ！</h5>
@@ -98,7 +87,7 @@
                 <p>コメント：<br>書籍の簡単なレビュー</p>
             </td>
             <td><button class="btn btn-primary"
-                    type=“button”onclick="location.href='https://www.google.com'">詳細</button></td>
+                    type=“button”onclick="location.href='http://localhost:3000/books/4'">詳細</button></td>
         </tr>
     </tbody>
 </table>
