@@ -29,7 +29,7 @@ form p{
 .email {
     margin-bottom: 20px;
 }
-/*
+
 input[type="text"],
 input[type="password"],
 input[type="email"] {
@@ -38,7 +38,7 @@ input[type="email"] {
     font-size: 14px;
     margin: 0 auto;
 }
-*/    
+    
 .submit{
     text-align: center;
 }
