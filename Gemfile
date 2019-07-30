@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.5'
 
-#gem 'yui-compressor'
+gem 'yui-compressor'
 
 gem 'carrierwave'
 gem 'devise'
