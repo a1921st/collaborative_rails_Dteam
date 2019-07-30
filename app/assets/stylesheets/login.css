@@ -32,7 +32,7 @@ form p{
 
 input[type="text"],
 input[type="password"],
-input[type="email"] {
+input[type="email"]{
     width: 350px;
     padding: 4px;
     font-size: 14px;
