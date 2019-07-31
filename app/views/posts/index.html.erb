@@ -22,8 +22,7 @@
     <div class="collapse navbar-collapse justify-content-end">
         <ul class="navbar-nav">
             <li class="nav-item">
-		<a class="nav-link" href="http://localhost:3000/users/sign_in">ログアウト</a>
-		<!-- <% link_to 'ログアウト', '/users/sessions/new.html.erb' %> -->
+                <a class="nav-link" href="/users/sign_up">ログアウト</a>
             </li>
             <li class="nav-item active">
 		<a class="nav-link" href="http://localhost:3000/users/registrations/edit">マイページ</a>
@@ -38,13 +37,8 @@
 </div>
 
 <div class="float-right" style="margin:20px">
-    <form action="">
-        <div class="input-group">
-            <input type="text" placeholder="書籍タイトル">
-            <button class="btn btn-primary" type=“button” onclick="">検索</button>
-        </div>
-        </div>
-    </form>
+            <button class="button"
+		type="button"onclick="location.href='../books/new'">登録</button>
 </div>
 
 <table class="table table-hover table-bordered text-center">
@@ -59,36 +53,36 @@
     <tbody>
         <tr>
             <td>1</td>
-            <td><img src="img2.png" width="70%"></img></td>
+            <td><% image_tag 'img2.png' %></td>
             <td style="text-align:left;">
                 <h5>竹尾さん　のおすすめ！</h5>
                 <p>タイトル：アジャイルソフトウェア開発の奥義<br>著者：ロバート・C・マーチン</p>
                 <p>コメント：<br>読めば読むほど目からうろこが落ちます！</p>
             </td>
             <td><button class="btn btn-primary"
-                   type="button"onclick="location.href='http://localhost:3000/books/2'">詳細</button></td>
+                   type="button"onclick="location.href='../books/2'">詳細</button></td>
         </tr>
         <tr>
             <td>2</td>
-            <td><img src="img3.png" width="70%"></img></td>
+            <td><img src="img2.png" width="70%"></img></td>
             <td style="text-align:left;">
                 <h5>増田さん　のおすすめ！</h5>
                 <p>タイトル：スクラム実践入門<br>著者：貝瀬岳志　他</p>
                 <p>コメント：<br>スクラムの基礎から応用まで学べます!</p>
             </td>
             <td><button class="btn btn-primary"
-                    type=“button”onclick="location.href='http://localhost:3000/books/3'">詳細</button></td>
+                    type=“button”onclick="location.href='../books/3'">詳細</button></td>
         </tr>
         <tr>
             <td>3</td>
-            <td><img src="no_image.png" alt="No data" width="70%"></img></td>
+            <td><img src="img.png" alt="No data" width="70%"></img></td>
             <td style="text-align:left;">
                 <h5>（登録者さん）　のおすすめ！</h5>
                 <p>タイトル：おすすめ本のタイトル<br>著者：原著者、訳者など</p>
                 <p>コメント：<br>書籍の簡単なレビュー</p>
             </td>
             <td><button class="btn btn-primary"
-                    type=“button”onclick="location.href='http://localhost:3000/books/4'">詳細</button></td>
+                    type=“button”onclick="location.href='../books/4'">詳細</button></td>
         </tr>
     </tbody>
 </table>
