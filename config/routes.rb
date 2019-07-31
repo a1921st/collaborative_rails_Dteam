@@ -6,6 +6,8 @@ Rails.application.routes.draw do
       registrations: 'users/registrations'
   }
   resources :users
+  resources :books
+  post "/books" => "books#new"
   #root 'users/sessions#new'
   root 'welcome#index'
 end
